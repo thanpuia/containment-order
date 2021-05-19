@@ -25,7 +25,9 @@ class OrderController extends Controller
             'name' => 'required',
             'contact' => 'bail|numeric|required|digits:10', //bail: quit after fisrt validation fail
             'address' => 'required',
-            'items' => 'required'
+            'items' => 'required',
+            'base' => 'required'
+
         ], [
 
             'name.required' => 'Hming dah tur',
@@ -122,5 +124,10 @@ class OrderController extends Controller
         return view('order.index',compact('orders'))->with('success', 'Order deleted successfully.');
     }
 
+    public function adminGetAll(){
+        //TODO:: THIS SHOULD BE PASSWORD PROTECT
+        $orders = Order::where('base','1')->get();
+        return view('admin.index',compact('orders'));
+    }
     
 }

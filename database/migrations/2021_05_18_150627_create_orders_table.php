@@ -25,6 +25,8 @@ class CreateOrdersTable extends Migration
             $table->string("param2")->nullable();
             $table->string("param3")->nullable();
 
+            $table->integer("status")->nullable();//1=processing. 2=delivering. 3=delivered
+
             $table->softDeletes();
             $table->timestamps();
         });

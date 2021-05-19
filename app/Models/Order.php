@@ -12,5 +12,5 @@ class Order extends Model
     
     use SoftDeletes;
 
-    protected $fillable = ['name','contact','address','items',];
+    protected $fillable = ['name','contact','address','items','base'];
 }

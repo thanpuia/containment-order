@@ -2,6 +2,8 @@
 
 <form action="/order" method="POST">
 @csrf
+    <input type="hidden"  name="base" value="1">
+
     <label for="name" class="form-label">Hming</label>
     @if ($errors->has('name'))
         <span class="text-danger">{{ $errors->first('name') }}</span>

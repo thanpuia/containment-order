@@ -15,7 +15,11 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <div class="container">
-<a href="/order/gmo">Get my Orders</a>
+<a href="../../../order/gmo">Get my Orders</a>
+<a href="../../../order/create">Create Order</a>
+
+<a href="../../../admin/o/aga">admin view all</a>
+
 <br>
 @if(Session::has('success'))
     <div class="alert alert-success">

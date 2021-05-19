@@ -18,7 +18,7 @@
 <a href="../../../order/gmo">Get my Orders</a>
 <a href="../../../order/create">Create Order</a>
 
-<a href="../../../admin/o/aga">admin view all</a>
+<a href="../../../order/create">Create Order</a>
 
 <br>
 @if(Session::has('success'))

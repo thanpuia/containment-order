@@ -28,6 +28,9 @@ Route::get('order/gmo',[OrderController::class,'getMyOrders']);//gmo = Get My Or
 
 //Between these should be authenticated
 Route::get('admin/o/aga',[OrderController::class,'adminGetAll']);//aga = Admin Get All. o=order
+Route::post('admin/o/acs',[OrderController::class,'adminChangeStatus'])->name('admin.status');//acs = Admin Change status. o=order
+
+
 //Between these should be authenticated
 
 Route::resource('order', OrderController::class);

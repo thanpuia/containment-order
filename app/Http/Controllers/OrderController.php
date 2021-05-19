@@ -129,5 +129,13 @@ class OrderController extends Controller
         $orders = Order::where('base','1')->get();
         return view('admin.index',compact('orders'));
     }
+
+    public function adminChangeStatus(Request $request){
+        error_log("lksaflksadfsdjflksjfkl;sadjfklds");
+        $order = Order::find($request->id);
+        $order->status=$request->status;
+        $order->save();
+        return $order;
+    }
     
 }

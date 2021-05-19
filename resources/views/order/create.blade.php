@@ -3,6 +3,7 @@
 <form action="/order" method="POST">
 @csrf
     <input type="hidden"  name="base" value="1">
+    <input type="hidden"  name="status" value="1">
 
     <label for="name" class="form-label">Hming</label>
     @if ($errors->has('name'))
